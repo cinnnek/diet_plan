@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="main-page">
+        <div class="header">
+            <div class="logo"></div>
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="{% url 'home' %}">Strona główna</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{% url 'plan_list' %}">Plany dietetyczne</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{% url 'kalkulator' %}">Kalkulator kalorii</a>
+                </div>
+            </div>
+            <div class="account">Konto</div>
+        </div>
+
+        <div class="hero-section">
+            <h1 class="hero-title">Zadbaj o swoją dietę z DietaPlan!</h1>
+            <p class="hero-subtitle">
+                Sprawdź spersonalizowane plany dietetyczne, kontroluj swoje spożycie kalorii i realizuj swoje cele zdrowotne.
+            </p>
+            <button class="hero-button">Sprawdź plany</button>
+        </div>
+
+        <section class="features">
+            <h2 class="features-title">Dlaczego warto skorzystać z naszych usług?</h2>
+            <p class="features-description">
+                Oferujemy spersonalizowane plany dietetyczne, które są idealnie dopasowane do Twoich potrzeb i celów.
+                Dzięki naszemu intuicyjnemu kalkulatorowi kalorii możesz łatwo kontrolować dzienne spożycie kalorii i makroskładników,
+                co pomoże Ci utrzymać zdrową dietę. Dodatkowo, mamy bogatą bazę produktów spożywczych,
+                która ułatwi Ci planowanie posiłków i śledzenie wartości odżywczych każdego dania.
+                Z nami osiągniesz swoje cele zdrowotne szybciej i skuteczniej!
+            </p>
+        </section>
+
+        <section class="services">
+            <div class="service-item">
+                <h3 class="service-title">Plany dietetyczne</h3>
+                <p class="service-description">Wybierz dietę idealnie dopasowaną do Twojego stylu życia i celów</p>
+                <button class="service-button">Sprawdź plany</button>
+            </div>
+
+            <div class="service-item">
+                <h3 class="service-title">Kalkulator kalorii</h3>
+                <p class="service-description">Śledź spożycie kalorii i makroskładników każdego dnia</p>
+                <button class="service-button">Oblicz kalorie</button>
+            </div>
+
+            <div class="service-item">
+                <h3 class="service-title">Baza produktów</h3>
+                <p class="service-description">Wybieraj z setek produktów spożywczych i sprawdź ile mają kalorii</p>
+                <button class="service-button">Sprawdź produkty</button>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-content">
+                <h2 class="about-title">O Nas</h2>
+                <p class="about-description">
+                    Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum LoremipsumLorem ipsum Lorem ipsum Loremipsum Lorem ipsum Lorem
+                    ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Loremipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h3 class="footer-title">Przejdź do</h3>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Plany dietetyczne</a>
+                <a href="#" class="footer-link">Kalkulator kalorii</a>
+                <a href="#" class="footer-link">Baza produktów</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

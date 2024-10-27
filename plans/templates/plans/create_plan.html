@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+    <title>Stwórz Własny Plan</title>
+    {% load static %}
+</head>
+<body>
+    <div class="container">
+    <h1>Stwórz Własny Plan</h1>
+    <p>Wybierz liczbę posiłków, a następnie wybierz posiłki z list:</p>
+
+    <div class="mb-3">
+        <label for="mealCount" class="form-label">Liczba posiłków w diecie:</label>
+        <select id="mealCount" class="form-select">
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+
+    <div id="mealSelectors"></div>
+
+    <h3 id="totalCalories" class="mt-4">Suma kalorii: 0 kcal</h3>
+
+    <button type="submit" class="btn btn-primary mt-3">Pobierz Plan</button>
+</div>
+
+    <script id="meals-data" type="application/json">
+        {{ meals_json|safe }}
+    </script>
+    <script src="{% static 'js/create_plan_js.js' %}"></script>
+</body>
+</html>

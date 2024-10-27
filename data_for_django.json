@@ -1,0 +1,1787 @@
+[
+    {
+        "model": "plans.plan",
+        "pk": "1",
+        "fields": {
+            "nazwa": "Plan 2000 kcal",
+            "ile_kalorii": "2000",
+            "description": "Plan diety o dziennej wartości energetycznej 2000 kcal."
+        }
+    },
+    {
+        "model": "plans.plan",
+        "pk": "2",
+        "fields": {
+            "nazwa": "Plan 2500 kcal",
+            "ile_kalorii": "2500",
+            "description": "Plan diety o dziennej wartości energetycznej 2500 kcal."
+        }
+    },
+    {
+        "model": "plans.plan",
+        "pk": "3",
+        "fields": {
+            "nazwa": "Plan 3000 kcal",
+            "ile_kalorii": "3000",
+            "description": "Plan diety o dziennej wartości energetycznej 3000 kcal."
+        }
+    },
+    {
+        "model": "plans.plan",
+        "pk": "4",
+        "fields": {
+            "nazwa": "Plan 3500 kcal",
+            "ile_kalorii": "3500",
+            "description": "Plan diety o dziennej wartości energetycznej 3500 kcal."
+        }
+    },
+    {
+        "model": "plans.plan",
+        "pk": "5",
+        "fields": {
+            "nazwa": "Plan 4000 kcal",
+            "ile_kalorii": "4000",
+            "description": "Plan diety o dziennej wartości energetycznej 4000 kcal."
+        }
+    },
+    {
+        "model": "plans.plan",
+        "pk": "6",
+        "fields": {
+            "nazwa": "Plan 4500 kcal",
+            "ile_kalorii": "4500",
+            "description": "Plan diety o dziennej wartości energetycznej 4500 kcal."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "1",
+            "nazwa": "Omlet na masę",
+            "kcal": "1260",
+            "plan_id": "6",
+            "type": "Śniadanie",
+            "przepis": "W misce umieść białka jaj. Dodaj odżywkę płatki proszek\nbudyniowy proszek do pieczenia i szczyptę soli. Słodziki rozdrobnij\nlub rozpuść w gorącej wodzie i dodaj do miski. Całość zblenduj na\nstosunkowo jednolitą masę i przelej do okrągłej foremki do\npieczenia.\nOmlet piecz około 18 minut w 220 stopniach.\nPieczony omlet podawaj z jogurtem i plastrami banana"
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "2",
+            "nazwa": "Tortilla z jajecznicą",
+            "kcal": "472",
+            "plan_id": "2",
+            "type": "Śniadanie / przekąska",
+            "przepis": "Na patelni przygotuj standardową ściętą jajecznicę. Na osobnej\r\npatelni połóż placek tortilli. Nałóż na niego kawałki sera, rukolę,\r\nkukurydzę, ketchup, ściętą jajecznicę resztę sera i troszkę pieprzu.\r\nCałość zawiń i podpiecz tak aby się zarumieniła z obu stron.\r\nZacznij podpiekanie od tej strony gdzie placek na siebie zachodzi."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "7",
+            "nazwa": "Nocna owsianka z bananem i masłem orzechowym",
+            "kcal": "443",
+            "plan_id": "1",
+            "type": "Śniadanie ",
+            "przepis": "Płatki, nasiona chia, skyr, kakao i masło orzechowe przełożyć do pojemniczka i wymieszać. Odstawić na noc do lodówki. Kolejnego dnia rano dodać pokrojonego banana."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "8",
+            "nazwa": "Borówki amerykańskie 400g",
+            "kcal": "236",
+            "plan_id": "1",
+            "type": "Przekąska ",
+            "przepis": "Usuń szypułki z owoców. Umyj dokładnie owoce zimną wodą."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "9",
+            "nazwa": "Kurczak z kaszą gryczaną i kapustą kiszoną",
+            "kcal": "452",
+            "plan_id": "1",
+            "type": "Obiad",
+            "przepis": "Kaszę gryczaną gotujemy według przepisu na opakowaniu. Kurczaka, cebulę i paprykę kroimy w kostkę i smażymy na patelni na rozgrzanym oleju. Ugotowaną kaszę dodajemy na patelnię do pozostałych składników i mieszamy. Podajemy z kapusta kwaszoną."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "10",
+            "nazwa": "Racuchy z jabłkami\r\n",
+            "kcal": "637",
+            "plan_id": "1",
+            "type": "Obiad",
+            "przepis": "Jabłko ścieramy na tarce, podgrzewamy mleko i dodajemy drożdże. Następnie dodajemy mąkę, cynamon i olej. Całość mieszamy z jabłkami i odstawiamy, żeby ciasto wyrosło. Nakładamy łyżkami na rozgrzany tłuszcz i smażymy."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "11",
+            "nazwa": "Serek z brzoskwinią\r\n",
+            "kcal": "232",
+            "plan_id": "1",
+            "type": "Kolacja",
+            "przepis": "Brzoskwinię kroimy na małe kawałki i mieszamy z pozostałymi składnikami."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "12",
+            "nazwa": "Koktajl z bananem i szpinakiem\r\n",
+            "kcal": "528",
+            "plan_id": "2",
+            "type": "Przekąska",
+            "przepis": "Całość blendujemy"
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "13",
+            "nazwa": "Kasza jaglana ze schabem i pomidorami\r\n",
+            "kcal": "659",
+            "plan_id": "2",
+            "type": "Obiad",
+            "przepis": "Kaszę jaglaną przelewamy na sitku zimną wodą, następnie wrzątkiem i znów zimną wodą. Posiekaną cebulę smażymy na patelni na rozgrzanym oleju razem z pokrojonym w kostkę schabem, dodajemy pokrojoną w kostkę lub startą na grubej tarce marchewkę, pomidory i ulubione przyprawy. Dusimy na wolnym ogniu pod przykryciem, pod koniec dodajemy koncentrat pomidorowy. Kaszę kładziemy na talerz i zalewamy zawartością patelni."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "14",
+            "nazwa": "Zupa krem z dyni i grochu\r\n",
+            "kcal": "540",
+            "plan_id": "2",
+            "type": "Podwieczorek",
+            "przepis": "1. Namocz groch w miseczce z wodą. 2. Czosnek przeciśnij przez praskę. Zetrzyj na tarce (lub zblenduj) marchewkę i pietruszkę. Pokrój pora na drobne plasterki. Podsmaż rozdrobnione warzywa na rozgrzanej oliwie. Posól. Duś pod przykryciem 10 min. 3. Ugotuj groch (stosunek wody do grochu - 2:1). Dodaj groch do garnka z duszonymi warzywami. 4. Do warzyw dodaj dynię pokrojoną w kostkę, słodką paprykę oraz 0,5 szklanki wody. Gotuj około 15-20 minut. 5. Zmiksuj warzywa i posól wedle smaku. 6. Na suchej patelni upraż pestki słonecznika. 7. Dodaj pestki do zupy przed samym podaniem."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "15",
+            "nazwa": "Kanapki z pesto\r\n",
+            "kcal": "315",
+            "plan_id": "2",
+            "type": "Kolacja",
+            "przepis": "Chleb smarujemy pesto, nakładamy sałatę i paprykę"
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "16",
+            "nazwa": "Anaboliczne kanapki\r\n",
+            "kcal": "801",
+            "plan_id": "3",
+            "type": "Śniadanie",
+            "przepis": "Jajka ugotuj na twardo i delikatnie wystudź. Zagnieć je widelcem\r\nz twarogiem, śmietaną i przyprawami. Do pasty dodaj pokrojony\r\ndrobno szczypiorek i natkę. Pastę przełóż na kanapki. Dodaj\r\nplastry pomidora. Pestki podpraż na suchej patelni i posyp nimi\r\nkanapki."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "17",
+            "nazwa": "Mini serniczki",
+            "kcal": "541",
+            "plan_id": "3",
+            "type": "Przekąska",
+            "przepis": "Twaróg zagnieć widelcem razem z białkami. Dodaj mąkę i odżywkę. Całość wymieszaj. Olej rozgrzej na patelni. Łyżką\r\nnakładaj masę i smaż mini serniczki."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "18",
+            "nazwa": "Kurczak w sosie cytrynowym z ryżem\r\n",
+            "kcal": "859",
+            "plan_id": "3",
+            "type": "Obiad",
+            "przepis": "Kurczaka kroimy w kostkę i marynujemy w sosie złożonym z soku cytrynowego (2 łyżki), oliwy z oliwek (2 łyżki), odrobiną suszonej papryki chilli (na czubku łyżeczki) i soli. Smażymy na rozgrzanej patelni (bez dodatkowego tłuszczu). W międzyczasie przygotowujemy sałatkę: rukolę myjemy, dodajemy pomidorki koktajlowe (możemy je przekroić na pół) i posiekaną czerwoną cebulę. Polewamy dressingiem (1 łyżka oliwy, 1 łyżeczka soku z cytryny, pieprz, sól). Na sałatkę wykładamy zawartość patelni. Podajemy z ugotowanym według przepisu na opakowaniu ryżem."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "20",
+            "nazwa": "Sałatka z awokado, szpinakiem i pomarańczą\r\n",
+            "kcal": "485",
+            "plan_id": "3",
+            "type": "Podwieczorek",
+            "przepis": "Kroimy składniki, polewamy oliwą, posypujemy ulubionymi przyprawami i mieszamy ze szpinakiem. Podajemy z krążkami ryżowymi."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "21",
+            "nazwa": "Sałatka z kukurydzą, papryką i nasionami chia (z chlebem)",
+            "kcal": "323",
+            "plan_id": "3",
+            "type": "Kolacja",
+            "przepis": "Sałatę rwiemy, pomidora i paprykę kroimy. Całość mieszamy z kukurydzą i polewamy oliwą z oliwek zmieszaną z nasionami chia i ulubionymi przyprawami. Podajemy z chlebem."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "22",
+            "nazwa": "Mannaczi",
+            "kcal": "946",
+            "plan_id": "4",
+            "type": "Śniadanie",
+            "przepis": "W rondelku umieść mleko oraz kaszę. Zagotuj mleko stale\r\nmieszając. Gdy kasza zacznie gęstnieć ściągnij rondel z ognia\r\ni delikatnie wystudź. Dodaj odżywkę białkową i wymieszaj. Przełóż\r\nkaszę do miski dodaj owoce i orzechy lub masło orzechowe."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "23",
+            "nazwa": "Sałatka grecka\r\n",
+            "kcal": "478",
+            "plan_id": "4",
+            "type": "Przekąska",
+            "przepis": "Sałatę rwiemy na kawałki i mieszamy z oliwkami, pokrojonym pomidorem, ogórkiem, cebulą i serem. Całość polewamy oliwą z oliwek i sokiem z cytryny, przyprawiamy solą, pieprzem i oregano i mieszamy. Podajemy z chlebem."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "24",
+            "nazwa": "Kurczak chrupiący\r\n",
+            "kcal": "921",
+            "plan_id": "4",
+            "type": "Obiad",
+            "przepis": "Kurczaka kroimy w kostkę. Do jogurtu dodajemy pieprz i sól, mieszamy, a następnie dodajemy kurczaka. Zostawiamy na kilka minut. W międzyczasie płatki kukurydziane ugniatamy widelcem albo mielimy w młynku po czym panierujemy w nich kurczaka. Smażymy na rozgrzanym tłuszczu i podajemy z ugotowanym według przepisu na opakowaniu ryżem."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "25",
+            "nazwa": "Pieczona owsianka",
+            "kcal": "790",
+            "plan_id": "4",
+            "type": "Podwieczorek",
+            "przepis": "Wszystkie składniki poza owocami umieść w misce i bardzo\r\ndokładnie wymieszaj (lub zmiksuj). Dodaj owoce. Masę przełóż do\r\nprostokątnej foremki do pieczenia (20x10 cm) i posyp wiórkami\r\nkokosowymi. Piecz 25 minut w 175 stopniach."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "26",
+            "nazwa": "Kanapki z szynką z indyka i warzywami\r\n",
+            "kcal": "362",
+            "plan_id": "4",
+            "type": "Kolacja",
+            "przepis": "Chleb smarujemy masłem, dodajemy kolejno sałatę, szynkę i pokrojonego ogórka"
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "27",
+            "nazwa": "Jabłuszka w cieście",
+            "kcal": "806",
+            "plan_id": "5",
+            "type": "Śniadanie",
+            "przepis": " Myjemy jabłka i obieramy ze skóry. Kroimy w średniej wielkości plastry. Przygotowujemy ciasto o konsystencji gęstej od ciasta na naleśniki dodając szczyptę cynamonu. Smażymy wszystko na rozgrzanym oleju. Odsączamy zbędny tłuszcz kładąc jabłka w cieście na ręcznikach papierowych i posypujemy mieszanką cukru pudru z cynamonem."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "28",
+            "nazwa": "Placuszki bananowe",
+            "kcal": "625",
+            "plan_id": "5",
+            "type": "Przekąska",
+            "przepis": "Banany rozgnieść w misce widelcem. Dodać jajka i mąkę, dokładnie wymieszać. Smażyć na niewielkiej ilości oleju."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "29",
+            "nazwa": "Makaron z gorgonzolą",
+            "kcal": "1296",
+            "plan_id": "5",
+            "type": "Obiad",
+            "przepis": "Makaron gotujemy al dente, nim się zagotuje delikatnie podgrzewamy na patelni pokrojoną w kostkę gruszkę. Do odcedzonego makaronu wrzucamy ser, gruszki i posiekane orzechy włoskie."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "30",
+            "nazwa": "Pieczone bataty",
+            "kcal": "583",
+            "plan_id": "5",
+            "type": "Podwieczorek",
+            "przepis": "Bataty obrać i pokroić w cienkie słupki. Zmieszać z sokiem z cytryny i z oliwą, doprawić solą i pieprzem. Nieobrane ząbki czosnku rozgnieść nożem i położyć z batatami na blasze. Piec na blasze wyłożonej papierem do pieczenia w temp. 180 stopni przez około 40 minut, aż będą miękkie."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "31",
+            "nazwa": "Zapiekanka z grahamki",
+            "kcal": "732",
+            "plan_id": "5",
+            "type": "Kolacja",
+            "przepis": "Grahamkę kroimy na pół, smarujemy margaryną każdą połowę, kładziemy po plasterku szynki a następnie posypujemy startym żółtym serem. Pieczemy w piekarniku aż ser się roztopi a bułka będzie chrupiąca. Można posmarować keczupem."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "32",
+            "nazwa": "Jaglanka z bananem, amarantusem i rodzynkami\r\n",
+            "kcal": "545",
+            "plan_id": "6",
+            "type": "Przekąska",
+            "przepis": "Rodzynki płuczemy na sitku zimną wodą, następnie przelewamy wrzątkiem. Całość wsypujemy do miski i zalewamy mlekiem"
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "33",
+            "nazwa": "Naleśnik z dżemem",
+            "kcal": "1384",
+            "plan_id": "6",
+            "type": "Obiad",
+            "przepis": "Składniki miksujemy z dodatkiem odrobiny wody (do uzyskania odpowiedniej konsystencji, pozwalającej na wylanie zawartości na patelnię) i smażymy całość na średnim ogniu na oleju. W efekcie otrzymujemy jeden gruby naleśnik. Po przełożeniu na talerz smarujemy dżemem niskosłodzonym - proponujemy morelowy, ale świetnie sprawdzi się każdy niskosłodzony dżem."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "34",
+            "nazwa": "Dorsz gotowany na parze z brokułem\r\n",
+            "kcal": "521",
+            "plan_id": "6",
+            "type": "Podwieczorek",
+            "przepis": "Dorsza solimy i okładamy plastrami pokrojonej cytryny. Brokuła solimy i gotujemy na parze razem z dorszem przez ok. 20 - 25 minut. Kaszę jaglaną płuczemy pod zimną, bieżącą wodą, a następnie przelewamy wrzątkiem. Gotujemy w posolonej wodzie w proporcjach 1:2,5 (kasza:woda) przez ok. 15 minut. Podajemy na talerzu, posypane sezamem. Brokuła polewamy oliwą z oliwek."
+        }
+    },
+    {
+        "model": "plans.posilek",
+        "pk": null,
+        "fields": {
+            "id_posilku": "35",
+            "nazwa": "Makaron ryżowy z łososiem i szpinakiem\r\n",
+            "kcal": "860",
+            "plan_id": "6",
+            "type": "Kolacja",
+            "przepis": "Pokrojone w paski suszone pomidory i łososia smażymy na patelni na oleju razem ze szpinakiem. Obok przygotowujemy makaron ryżowy według przepisu na opakowaniu. Na talerzu wykładamy makaron, następnie łososia z warzywami. Całość posypujemy natką pietruszki."
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "1",
+            "product_name": "Banan",
+            "calories_per_100g": "97.00",
+            "proteins_per_100g": "1.00",
+            "carbs_per_100g": "23.50",
+            "fats_per_100g": "0.30"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "2",
+            "product_name": "Pierś z kurczaka",
+            "calories_per_100g": "98.00",
+            "proteins_per_100g": "21.50",
+            "carbs_per_100g": "0.00",
+            "fats_per_100g": "1.30"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "3",
+            "product_name": "Ryż biały",
+            "calories_per_100g": "344.00",
+            "proteins_per_100g": "6.70",
+            "carbs_per_100g": "78.90",
+            "fats_per_100g": "0.70"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "4",
+            "product_name": "Ryż brązowy",
+            "calories_per_100g": "119.00",
+            "proteins_per_100g": "3.40",
+            "carbs_per_100g": "22.80",
+            "fats_per_100g": "1.10"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "5",
+            "product_name": "Jajko",
+            "calories_per_100g": "139.00",
+            "proteins_per_100g": "12.50",
+            "carbs_per_100g": "0.60",
+            "fats_per_100g": "9.70"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "6",
+            "product_name": "Mleko 3,2%",
+            "calories_per_100g": "61.00",
+            "proteins_per_100g": "3.30",
+            "carbs_per_100g": "4.80",
+            "fats_per_100g": "3.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "7",
+            "product_name": "Mleko 2%",
+            "calories_per_100g": "51.00",
+            "proteins_per_100g": "3.40",
+            "carbs_per_100g": "4.90",
+            "fats_per_100g": "2.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "8",
+            "product_name": "Mleko 1,5%",
+            "calories_per_100g": "39.00",
+            "proteins_per_100g": "3.60",
+            "carbs_per_100g": "2.70",
+            "fats_per_100g": "1.50"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "9",
+            "product_name": "Mleko 0.5%",
+            "calories_per_100g": "37.00",
+            "proteins_per_100g": "3.00",
+            "carbs_per_100g": "5.00",
+            "fats_per_100g": "0.50"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "10",
+            "product_name": "Jabłko",
+            "calories_per_100g": "52.00",
+            "proteins_per_100g": "0.40",
+            "carbs_per_100g": "14.00",
+            "fats_per_100g": "0.40"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "11",
+            "product_name": "Pomarańcza",
+            "calories_per_100g": "53.00",
+            "proteins_per_100g": "0.90",
+            "carbs_per_100g": "13.00",
+            "fats_per_100g": "0.30"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "12",
+            "product_name": "Truskawki",
+            "calories_per_100g": "32.00",
+            "proteins_per_100g": "0.67",
+            "carbs_per_100g": "7.68",
+            "fats_per_100g": "0.30"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "13",
+            "product_name": "Marchew",
+            "calories_per_100g": "41.00",
+            "proteins_per_100g": "0.93",
+            "carbs_per_100g": "9.58",
+            "fats_per_100g": "0.24"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "14",
+            "product_name": "Brokuły",
+            "calories_per_100g": "34.00",
+            "proteins_per_100g": "2.82",
+            "carbs_per_100g": "7.00",
+            "fats_per_100g": "0.40"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "15",
+            "product_name": "Wołowina",
+            "calories_per_100g": "250.00",
+            "proteins_per_100g": "26.00",
+            "carbs_per_100g": "0.00",
+            "fats_per_100g": "18.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "16",
+            "product_name": "Jogurt naturalny",
+            "calories_per_100g": "61.00",
+            "proteins_per_100g": "3.50",
+            "carbs_per_100g": "4.66",
+            "fats_per_100g": "3.25"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "17",
+            "product_name": "Chleb razowy",
+            "calories_per_100g": "218.00",
+            "proteins_per_100g": "5.90",
+            "carbs_per_100g": "41.90",
+            "fats_per_100g": "1.30"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "18",
+            "product_name": "Chleb biały",
+            "calories_per_100g": "265.00",
+            "proteins_per_100g": "9.30",
+            "carbs_per_100g": "54.30",
+            "fats_per_100g": "1.40"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "19",
+            "product_name": "Makaron fusilli suchy",
+            "calories_per_100g": "359.00",
+            "proteins_per_100g": "12.00",
+            "carbs_per_100g": "71.00",
+            "fats_per_100g": "2.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "20",
+            "product_name": "Makaron penne suchy",
+            "calories_per_100g": "353.00",
+            "proteins_per_100g": "13.00",
+            "carbs_per_100g": "69.00",
+            "fats_per_100g": "2.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "21",
+            "product_name": "Makaron pełnoziarnisty suchy",
+            "calories_per_100g": "348.00",
+            "proteins_per_100g": "14.63",
+            "carbs_per_100g": "75.03",
+            "fats_per_100g": "1.40"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "22",
+            "product_name": "Makaron ryżowy suchy",
+            "calories_per_100g": "364.00",
+            "proteins_per_100g": "5.95",
+            "carbs_per_100g": "80.18",
+            "fats_per_100g": "0.56"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "23",
+            "product_name": "Kasza gryczana sucha",
+            "calories_per_100g": "344.00",
+            "proteins_per_100g": "13.50",
+            "carbs_per_100g": "69.94",
+            "fats_per_100g": "3.12"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "24",
+            "product_name": "Kasza jęczmienna sucha",
+            "calories_per_100g": "335.00",
+            "proteins_per_100g": "7.40",
+            "carbs_per_100g": "68.80",
+            "fats_per_100g": "2.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "25",
+            "product_name": "Ziemniaki gotowane",
+            "calories_per_100g": "70.00",
+            "proteins_per_100g": "0.90",
+            "carbs_per_100g": "17.00",
+            "fats_per_100g": "0.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "26",
+            "product_name": "Sałata masłowa",
+            "calories_per_100g": "13.00",
+            "proteins_per_100g": "1.35",
+            "carbs_per_100g": "2.23",
+            "fats_per_100g": "0.22"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "27",
+            "product_name": "Pomidor",
+            "calories_per_100g": "19.00",
+            "proteins_per_100g": "0.88",
+            "carbs_per_100g": "4.10",
+            "fats_per_100g": "0.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "28",
+            "product_name": "Ogórek",
+            "calories_per_100g": "15.00",
+            "proteins_per_100g": "0.70",
+            "carbs_per_100g": "2.90",
+            "fats_per_100g": "0.11"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "29",
+            "product_name": "Cebula",
+            "calories_per_100g": "33.00",
+            "proteins_per_100g": "1.40",
+            "carbs_per_100g": "6.90",
+            "fats_per_100g": "0.40"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "30",
+            "product_name": "Czosnek",
+            "calories_per_100g": "152.00",
+            "proteins_per_100g": "6.40",
+            "carbs_per_100g": "32.66",
+            "fats_per_100g": "0.50"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "31",
+            "product_name": "Czekolada gorzka 80 %",
+            "calories_per_100g": "497.00",
+            "proteins_per_100g": "10.00",
+            "carbs_per_100g": "20.00",
+            "fats_per_100g": "41.28"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "32",
+            "product_name": "Czekolada mleczna",
+            "calories_per_100g": "545.00",
+            "proteins_per_100g": "6.70",
+            "carbs_per_100g": "54.00",
+            "fats_per_100g": "33.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "33",
+            "product_name": "Masło",
+            "calories_per_100g": "748.00",
+            "proteins_per_100g": "0.70",
+            "carbs_per_100g": "0.70",
+            "fats_per_100g": "82.50"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "34",
+            "product_name": "Oliwa z oliwek",
+            "calories_per_100g": "897.00",
+            "proteins_per_100g": "0.00",
+            "carbs_per_100g": "0.20",
+            "fats_per_100g": "99.60"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "35",
+            "product_name": "Sok pomarańczowy",
+            "calories_per_100g": "43.00",
+            "proteins_per_100g": "0.70",
+            "carbs_per_100g": "8.90",
+            "fats_per_100g": "0.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "36",
+            "product_name": "Sok jabłkowy",
+            "calories_per_100g": "42.00",
+            "proteins_per_100g": "0.10",
+            "carbs_per_100g": "10.00",
+            "fats_per_100g": "0.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "37",
+            "product_name": "Woda mineralna",
+            "calories_per_100g": "0.00",
+            "proteins_per_100g": "0.00",
+            "carbs_per_100g": "0.00",
+            "fats_per_100g": "0.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "38",
+            "product_name": "Herbata czarna",
+            "calories_per_100g": "1.00",
+            "proteins_per_100g": "0.10",
+            "carbs_per_100g": "0.00",
+            "fats_per_100g": "0.30"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "39",
+            "product_name": "Kawa rozpuszczalna",
+            "calories_per_100g": "85.00",
+            "proteins_per_100g": "7.20",
+            "carbs_per_100g": "21.93",
+            "fats_per_100g": "1.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "40",
+            "product_name": "Orzechy włoskie",
+            "calories_per_100g": "649.00",
+            "proteins_per_100g": "14.00",
+            "carbs_per_100g": "11.00",
+            "fats_per_100g": "63.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "41",
+            "product_name": "Orzechy laskowe",
+            "calories_per_100g": "677.00",
+            "proteins_per_100g": "17.00",
+            "carbs_per_100g": "14.90",
+            "fats_per_100g": "63.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "42",
+            "product_name": "Migdały",
+            "calories_per_100g": "604.00",
+            "proteins_per_100g": "24.10",
+            "carbs_per_100g": "20.50",
+            "fats_per_100g": "52.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "43",
+            "product_name": "Pistacje",
+            "calories_per_100g": "605.00",
+            "proteins_per_100g": "26.50",
+            "carbs_per_100g": "10.30",
+            "fats_per_100g": "49.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "44",
+            "product_name": "Nerkowce",
+            "calories_per_100g": "597.00",
+            "proteins_per_100g": "17.00",
+            "carbs_per_100g": "24.00",
+            "fats_per_100g": "47.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "45",
+            "product_name": "Sezam",
+            "calories_per_100g": "573.00",
+            "proteins_per_100g": "17.73",
+            "carbs_per_100g": "23.45",
+            "fats_per_100g": "49.67"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "46",
+            "product_name": "Słonecznik",
+            "calories_per_100g": "577.00",
+            "proteins_per_100g": "24.00",
+            "carbs_per_100g": "19.00",
+            "fats_per_100g": "44.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "47",
+            "product_name": "Dynia",
+            "calories_per_100g": "33.00",
+            "proteins_per_100g": "1.30",
+            "carbs_per_100g": "7.70",
+            "fats_per_100g": "0.30"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "48",
+            "product_name": "Dynia piżmowa",
+            "calories_per_100g": "45.00",
+            "proteins_per_100g": "1.00",
+            "carbs_per_100g": "11.69",
+            "fats_per_100g": "0.10"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "49",
+            "product_name": "Awokado",
+            "calories_per_100g": "160.00",
+            "proteins_per_100g": "2.00",
+            "carbs_per_100g": "7.40",
+            "fats_per_100g": "15.30"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "50",
+            "product_name": "Ananas",
+            "calories_per_100g": "55.00",
+            "proteins_per_100g": "0.40",
+            "carbs_per_100g": "13.60",
+            "fats_per_100g": "0.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "51",
+            "product_name": "Winogrona",
+            "calories_per_100g": "71.00",
+            "proteins_per_100g": "0.50",
+            "carbs_per_100g": "18.20",
+            "fats_per_100g": "0.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "52",
+            "product_name": "Brzoskwinia",
+            "calories_per_100g": "50.00",
+            "proteins_per_100g": "1.00",
+            "carbs_per_100g": "11.90",
+            "fats_per_100g": "0.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "53",
+            "product_name": "Gruszka",
+            "calories_per_100g": "58.00",
+            "proteins_per_100g": "0.60",
+            "carbs_per_100g": "14.40",
+            "fats_per_100g": "0.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "54",
+            "product_name": "Maliny",
+            "calories_per_100g": "43.00",
+            "proteins_per_100g": "1.30",
+            "carbs_per_100g": "12.00",
+            "fats_per_100g": "0.30"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "55",
+            "product_name": "Borówki",
+            "calories_per_100g": "59.00",
+            "proteins_per_100g": "0.90",
+            "carbs_per_100g": "15.20",
+            "fats_per_100g": "0.30"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "56",
+            "product_name": "Białko jajka kurzego",
+            "calories_per_100g": "48.00",
+            "proteins_per_100g": "10.90",
+            "carbs_per_100g": "0.70",
+            "fats_per_100g": "0.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "57",
+            "product_name": "Płatki owsiane",
+            "calories_per_100g": "373.00",
+            "proteins_per_100g": "13.00",
+            "carbs_per_100g": "68.00",
+            "fats_per_100g": "6.90"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "58",
+            "product_name": "Budyń waniliowy bez cukru",
+            "calories_per_100g": "95.00",
+            "proteins_per_100g": "2.90",
+            "carbs_per_100g": "17.00",
+            "fats_per_100g": "1.80"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "59",
+            "product_name": "Odżywka białkowa",
+            "calories_per_100g": "390.00",
+            "proteins_per_100g": "76.00",
+            "carbs_per_100g": "8.00",
+            "fats_per_100g": "6.33"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "60",
+            "product_name": "Słodzik pastylki",
+            "calories_per_100g": "50.00",
+            "proteins_per_100g": "1.50",
+            "carbs_per_100g": "55.00",
+            "fats_per_100g": "0.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "61",
+            "product_name": "Proszek do pieczenia",
+            "calories_per_100g": "115.00",
+            "proteins_per_100g": "3.90",
+            "carbs_per_100g": "23.00",
+            "fats_per_100g": "0.60"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "62",
+            "product_name": "Sól kuchenna",
+            "calories_per_100g": "0.00",
+            "proteins_per_100g": "0.00",
+            "carbs_per_100g": "0.00",
+            "fats_per_100g": "0.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "63",
+            "product_name": "Toritlla",
+            "calories_per_100g": "296.00",
+            "proteins_per_100g": "7.60",
+            "carbs_per_100g": "54.00",
+            "fats_per_100g": "5.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "64",
+            "product_name": "Ser żółty",
+            "calories_per_100g": "262.00",
+            "proteins_per_100g": "29.50",
+            "carbs_per_100g": "0.10",
+            "fats_per_100g": "16.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "65",
+            "product_name": "Rukola",
+            "calories_per_100g": "26.00",
+            "proteins_per_100g": "3.80",
+            "carbs_per_100g": "0.80",
+            "fats_per_100g": "0.50"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "66",
+            "product_name": "Kukurydza",
+            "calories_per_100g": "120.00",
+            "proteins_per_100g": "3.00",
+            "carbs_per_100g": "21.80",
+            "fats_per_100g": "1.40"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "67",
+            "product_name": "Ketchup",
+            "calories_per_100g": "99.00",
+            "proteins_per_100g": "1.30",
+            "carbs_per_100g": "22.00",
+            "fats_per_100g": "0.50"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "68",
+            "product_name": "Pieprz czarny",
+            "calories_per_100g": "251.00",
+            "proteins_per_100g": "10.39",
+            "carbs_per_100g": "63.95",
+            "fats_per_100g": "3.26"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "69",
+            "product_name": "Szynka wieprzowa",
+            "calories_per_100g": "147.00",
+            "proteins_per_100g": "20.00",
+            "carbs_per_100g": "1.00",
+            "fats_per_100g": "7.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "70",
+            "product_name": "Nasiona chia",
+            "calories_per_100g": "456.00",
+            "proteins_per_100g": "20.00",
+            "carbs_per_100g": "0.70",
+            "fats_per_100g": "34.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "71",
+            "product_name": "Kakao",
+            "calories_per_100g": "459.00",
+            "proteins_per_100g": "18.20",
+            "carbs_per_100g": "50.60",
+            "fats_per_100g": "21.70"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "72",
+            "product_name": "Masło orzechowe",
+            "calories_per_100g": "596.00",
+            "proteins_per_100g": "27.00",
+            "carbs_per_100g": "14.00",
+            "fats_per_100g": "46.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "73",
+            "product_name": "Kapusta kiszona",
+            "calories_per_100g": "12.00",
+            "proteins_per_100g": "1.10",
+            "carbs_per_100g": "3.40",
+            "fats_per_100g": "0.20"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "74",
+            "product_name": "Papryka czerwona",
+            "calories_per_100g": "32.00",
+            "proteins_per_100g": "1.30",
+            "carbs_per_100g": "6.60",
+            "fats_per_100g": "0.50"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "75",
+            "product_name": "Olej rzepakowy",
+            "calories_per_100g": "900.00",
+            "proteins_per_100g": "0.00",
+            "carbs_per_100g": "0.00",
+            "fats_per_100g": "100.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "76",
+            "product_name": "Mleko ryżowe",
+            "calories_per_100g": "48.00",
+            "proteins_per_100g": "0.50",
+            "carbs_per_100g": "9.70",
+            "fats_per_100g": "1.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "77",
+            "product_name": "Mąka ryżowa",
+            "calories_per_100g": "349.00",
+            "proteins_per_100g": "7.60",
+            "carbs_per_100g": "76.90",
+            "fats_per_100g": "0.70"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "78",
+            "product_name": "Drożdże piekarskie",
+            "calories_per_100g": "92.00",
+            "proteins_per_100g": "11.30",
+            "carbs_per_100g": "14.50",
+            "fats_per_100g": "2.00"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "79",
+            "product_name": "Cynamon",
+            "calories_per_100g": "247.00",
+            "proteins_per_100g": "4.00",
+            "carbs_per_100g": "28.00",
+            "fats_per_100g": "1.24"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "80",
+            "product_name": "Serek homogenizowany naturalny",
+            "calories_per_100g": "117.00",
+            "proteins_per_100g": "10.00",
+            "carbs_per_100g": "4.70",
+            "fats_per_100g": "6.50"
+        }
+    },
+    {
+        "model": "plans.product",
+        "pk": null,
+        "fields": {
+            "id_prod": "81",
+            "product_name": "Miód pszczeli",
+            "calories_per_100g": "324.00",
+            "proteins_per_100g": "0.30",
+            "carbs_per_100g": "79.50",
+            "fats_per_100g": "0.00"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "1",
+        "fields": {
+            "id_posilku": "1",
+            "id_produktu": "56",
+            "nazwa_produktu": "Białko jajka kurzego",
+            "typ": "składnik główny",
+            "ilosc": "350.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "2",
+        "fields": {
+            "id_posilku": "1",
+            "id_produktu": "57",
+            "nazwa_produktu": "Płatki owsiane",
+            "typ": "składnik główny",
+            "ilosc": "150.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "3",
+        "fields": {
+            "id_posilku": "1",
+            "id_produktu": "1",
+            "nazwa_produktu": "Banan",
+            "typ": "dodatek",
+            "ilosc": "1.00",
+            "jednostka": "szt."
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "4",
+        "fields": {
+            "id_posilku": "1",
+            "id_produktu": "16",
+            "nazwa_produktu": "Jogurt naturalny",
+            "typ": "dodatek",
+            "ilosc": "80.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "5",
+        "fields": {
+            "id_posilku": "1",
+            "id_produktu": "58",
+            "nazwa_produktu": "Budyń waniliowy bez cukru",
+            "typ": "składnik główny",
+            "ilosc": "35.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "6",
+        "fields": {
+            "id_posilku": "1",
+            "id_produktu": "59",
+            "nazwa_produktu": "Odżywka białkowa",
+            "typ": "składnik główny",
+            "ilosc": "40.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "7",
+        "fields": {
+            "id_posilku": "1",
+            "id_produktu": "60",
+            "nazwa_produktu": "Słodzik pastylki",
+            "typ": "składnik główny",
+            "ilosc": "5.00",
+            "jednostka": "szt."
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "8",
+        "fields": {
+            "id_posilku": "1",
+            "id_produktu": "62",
+            "nazwa_produktu": "Sól kuchenna",
+            "typ": "składnik główny",
+            "ilosc": "0.25",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "9",
+        "fields": {
+            "id_posilku": "1",
+            "id_produktu": "61",
+            "nazwa_produktu": "Proszek do pieczenia",
+            "typ": "składnik główny",
+            "ilosc": "2.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "10",
+        "fields": {
+            "id_posilku": "8",
+            "id_produktu": "55",
+            "nazwa_produktu": "Borówki",
+            "typ": "składnik główny",
+            "ilosc": "400.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "11",
+        "fields": {
+            "id_posilku": "7",
+            "id_produktu": "57",
+            "nazwa_produktu": "Płatki owsiane",
+            "typ": "składnik główny",
+            "ilosc": "40.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "12",
+        "fields": {
+            "id_posilku": "7",
+            "id_produktu": "16",
+            "nazwa_produktu": "Jogurt naturalny",
+            "typ": "składnik główny",
+            "ilosc": "150.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "13",
+        "fields": {
+            "id_posilku": "7",
+            "id_produktu": "70",
+            "nazwa_produktu": "Nasiona chia",
+            "typ": "składnik główny",
+            "ilosc": "10.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "14",
+        "fields": {
+            "id_posilku": "7",
+            "id_produktu": "1",
+            "nazwa_produktu": "Banan",
+            "typ": "składnik główny",
+            "ilosc": "1.00",
+            "jednostka": "szt."
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "15",
+        "fields": {
+            "id_posilku": "7",
+            "id_produktu": "71",
+            "nazwa_produktu": "Kakao",
+            "typ": "składnik główny",
+            "ilosc": "3.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "16",
+        "fields": {
+            "id_posilku": "7",
+            "id_produktu": "72",
+            "nazwa_produktu": "Masło orzechowe",
+            "typ": "składnik główny",
+            "ilosc": "10.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "17",
+        "fields": {
+            "id_posilku": "9",
+            "id_produktu": "73",
+            "nazwa_produktu": "Kapusta kiszona",
+            "typ": "składnik główny",
+            "ilosc": "200.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "18",
+        "fields": {
+            "id_posilku": "9",
+            "id_produktu": "2",
+            "nazwa_produktu": "Pierś z kurczaka",
+            "typ": "składnik główny",
+            "ilosc": "100.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "19",
+        "fields": {
+            "id_posilku": "9",
+            "id_produktu": "74",
+            "nazwa_produktu": "Papryka czerwona",
+            "typ": "składnik główny",
+            "ilosc": "60.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "20",
+        "fields": {
+            "id_posilku": "9",
+            "id_produktu": "23",
+            "nazwa_produktu": "Kasza gryczana sucha",
+            "typ": "składnik główny",
+            "ilosc": "60.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "21",
+        "fields": {
+            "id_posilku": "9",
+            "id_produktu": "29",
+            "nazwa_produktu": "Cebula",
+            "typ": "składnik główny",
+            "ilosc": "30.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "22",
+        "fields": {
+            "id_posilku": "9",
+            "id_produktu": "75",
+            "nazwa_produktu": "Olej rzepakowy",
+            "typ": "składnik główny",
+            "ilosc": "10.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "23",
+        "fields": {
+            "id_posilku": "10",
+            "id_produktu": "10",
+            "nazwa_produktu": "Jabłko",
+            "typ": "składnik główny",
+            "ilosc": "150.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "26",
+        "fields": {
+            "id_posilku": "10",
+            "id_produktu": "76",
+            "nazwa_produktu": "Mleko ryżowe",
+            "typ": "składnik główny",
+            "ilosc": "125.00",
+            "jednostka": "ml"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "27",
+        "fields": {
+            "id_posilku": "10",
+            "id_produktu": "77",
+            "nazwa_produktu": "Mąka ryżowa",
+            "typ": "składnik główny",
+            "ilosc": "100.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "28",
+        "fields": {
+            "id_posilku": "10",
+            "id_produktu": "78",
+            "nazwa_produktu": "Drożdże piekarskie",
+            "typ": "składnik główny",
+            "ilosc": "15.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "29",
+        "fields": {
+            "id_posilku": "10",
+            "id_produktu": "75",
+            "nazwa_produktu": "Olej rzepakowy",
+            "typ": "składnik główny",
+            "ilosc": "15.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "30",
+        "fields": {
+            "id_posilku": "10",
+            "id_produktu": "79",
+            "nazwa_produktu": "Cynamon",
+            "typ": "składnik główny",
+            "ilosc": "5.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "31",
+        "fields": {
+            "id_posilku": "11",
+            "id_produktu": "80",
+            "nazwa_produktu": "Serek homogenizowany naturalny",
+            "typ": "składnik główny",
+            "ilosc": "200.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "32",
+        "fields": {
+            "id_posilku": "11",
+            "id_produktu": "52",
+            "nazwa_produktu": "Brzoskwinia",
+            "typ": "składnik główny",
+            "ilosc": "85.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "33",
+        "fields": {
+            "id_posilku": "11",
+            "id_produktu": "81",
+            "nazwa_produktu": "Miód pszczeli",
+            "typ": "składnik główny",
+            "ilosc": "12.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.skladposilku",
+        "pk": "34",
+        "fields": {
+            "id_posilku": "11",
+            "id_produktu": "57",
+            "nazwa_produktu": "Płatki owsiane",
+            "typ": "składnik główny",
+            "ilosc": "10.00",
+            "jednostka": "g"
+        }
+    },
+    {
+        "model": "plans.user",
+        "pk": null,
+        "fields": {
+            "id_user": "1",
+            "imie": "Test",
+            "username": "test123",
+            "email": "test@example.com",
+            "password": "test123",
+            "age": "30",
+            "weight": "75.50",
+            "height": "180.00",
+            "activity_level": "4"
+        }
+    }
+]

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+    <title>Plany Dietetyczne</title>
+</head>
+<body>
+    <h1>Plany Dietetyczne</h1>
+    <a href="{% url 'create_plan' %}" class="btn btn-success mb-4">Stwórz własny plan</a>
+    <div class="plans-container">
+        {% for item in plans_with_meals %}
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="Plan Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.plan.nazwa }}</h5>
+                    <p class="card-text">{{ item.plan.description }}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    {% for meal in item.meals %}
+                        <li class="list-group-item">{{ meal.nazwa }}</li>
+                    {% endfor %}
+                </ul>
+                <div class="card-body">
+                    <a href="{% url 'plan_detail' item.plan.id_plan %}" class="btn btn-primary">Wybierz</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
