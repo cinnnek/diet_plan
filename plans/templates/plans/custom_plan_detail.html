@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+    <title>Własny Plan</title>
+    {% load static %}
+</head>
+<body>
+    <div class="container">
+        <h1>Twój Własny Plan Dietetyczny</h1>
+        <p>Oto szczegóły twojego planu:</p>
+
+        <h2>Wybrane posiłki</h2>
+        <ul class="list-group">
+            {% for item in meals_with_ingredients %}
+                <li class="list-group-item">
+                    <h5>{{ item.meal.nazwa }} - {{ item.meal.kcal }} kcal</h5>
+                    <p><strong>Przepis:</strong> {{ item.meal.przepis }}</p>
+                    <h6>Składniki:</h6>
+                    <ul>
+                        {% for skladnik in item.skladniki %}
+                            <li>{{ skladnik.nazwa_produktu }} - {{ skladnik.ilosc }} {{ skladnik.jednostka }}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <a href="{% url 'plan_list' %}" class="btn btn-secondary mt-4">Powrót do listy planów</a>
+    </div>
+</body>
+</html>
