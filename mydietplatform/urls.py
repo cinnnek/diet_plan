@@ -25,4 +25,5 @@ urlpatterns = [
     path('kalkulator/', views.kalkulator, name='kalkulator'),
     path('plan_detail/<int:id_plan>/', views.plan_detail, name='plan_detail'),
     path('create_plan/', views.create_plan, name='create_plan'),
+    path('custom_plan_detail/', views.custom_plan_detail, name='custom_plan_detail'),
 ]

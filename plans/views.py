@@ -35,3 +35,21 @@ def create_plan(request):
     return render(request, 'plans/create_plan.html', {
         'meals_json': meals_json
     })
+def custom_plan_detail(request):
+    # Pobierz wybrane posiłki z GET (z adresu URL)
+    meal_ids = request.GET.getlist('meals')
+    selected_meals = Posilek.objects.filter(id_posilku__in=meal_ids)
+
+    # Pobierz składniki dla każdego posiłku
+    meals_with_ingredients = []
+    for meal in selected_meals:
+        skladniki = SkladPosilku.objects.filter(id_posilku=meal)
+        meals_with_ingredients.append({
+            'meal': meal,
+            'skladniki': skladniki
+        })
+
+    context = {
+        'meals_with_ingredients': meals_with_ingredients
+    }
+    return render(request, 'plans/custom_plan_detail.html', context)

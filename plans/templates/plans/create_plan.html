@@ -25,11 +25,15 @@
 
     <h3 id="totalCalories" class="mt-4">Suma kalorii: 0 kcal</h3>
 
-    <button type="submit" class="btn btn-primary mt-3">Pobierz Plan</button>
+    <a href="{% url 'plan_list' %}" class="btn btn-secondary mt-4">Powrót do listy planów</a>
+    <a href="{% url 'custom_plan_detail' %}" class="btn btn-primary mt-3">Przejdź do planu</a>
 </div>
 
     <script id="meals-data" type="application/json">
         {{ meals_json|safe }}
+    </script>
+    <script>
+        const customPlanDetailUrl = "{% url 'custom_plan_detail' %}";
     </script>
     <script src="{% static 'js/create_plan_js.js' %}"></script>
 </body>

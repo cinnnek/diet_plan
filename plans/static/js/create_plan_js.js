@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const meals = JSON.parse(document.getElementById("meals-data").textContent);
 
-    // Sortuj posiłki według kalorii rosnąco
+    const meals = JSON.parse(document.getElementById("meals-data").textContent);
     meals.sort((a, b) => a.kcal - b.kcal);
 
     function showMealSelectors() {
@@ -25,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Dodanie domyślnej opcji "Wybierz posiłek"
             const defaultOption = document.createElement("option");
+            defaultOption.value = "";
             defaultOption.textContent = "Wybierz posiłek " + i;
             defaultOption.disabled = true;
             defaultOption.selected = true;
@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
         updateCalories();
     }
 
-    // Funkcja aktualizująca sumę kalorii
     function updateCalories() {
         const selectors = document.querySelectorAll("select[name='selected_meals']");
         let totalCalories = 0;
@@ -60,10 +59,25 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("totalCalories").textContent = `Suma kalorii: ${totalCalories} kcal`;
     }
 
-    // Ustaw domyślną wartość na 3 przy załadowaniu strony
+    document.querySelector(".btn-primary").addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const selectedMeals = Array.from(document.querySelectorAll("select[name='selected_meals']"))
+            .map(select => select.value);
+
+        // Sprawdzenie, czy wszystkie posiłki zostały wybrane
+        if (selectedMeals.includes("")) {
+            alert("Proszę wybrać wszystkie posiłki.");
+            return;
+        }
+
+        const baseUrl = new URL(window.location.origin + customPlanDetailUrl);
+        selectedMeals.forEach(mealId => baseUrl.searchParams.append("meals", mealId));
+
+        window.location.href = baseUrl;
+    });
+
     document.getElementById("mealCount").value = 3;
     showMealSelectors();
-
-    // Dodaj event listener dla zmiany liczby posiłków
     document.getElementById("mealCount").addEventListener("change", showMealSelectors);
 });
