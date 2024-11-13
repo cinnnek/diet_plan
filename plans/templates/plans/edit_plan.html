@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+
         <div class="header">
             <div class="logo"></div>
             <div class="menu">
@@ -23,15 +24,16 @@
                 </div>
             </div>
         </div>
+
         <h1>Stwórz Własny Plan</h1>
         <p>Wybierz liczbę posiłków, a następnie wybierz posiłki z list:</p>
 
         <div class="mb-3">
             <label for="mealCount" class="form-label">Liczba posiłków w diecie:</label>
             <select id="mealCount" class="form-select">
-                <option value="3" selected>3</option>
+                <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5" selected>5</option>
             </select>
         </div>
 
@@ -50,8 +52,9 @@
         {{ selected_meals_json|safe }}
     </script>
     <script>
+        const editMode = true;  // tryb edycji
         const customPlanDetailUrl = "{% url 'custom_plan_detail' %}";
     </script>
-    <script src="{% static 'js/create_plan_js.js' %}"></script>
+    <script src="{% static 'js/edit_plan_js.js' %}"></script>
 </body>
 </html>

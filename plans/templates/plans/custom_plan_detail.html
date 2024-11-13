@@ -9,7 +9,27 @@
 </head>
 <body>
     <div class="container">
+
+        <div class="header">
+            <div class="logo"></div>
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="{% url 'home' %}">Strona główna</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{% url 'plan_list' %}">Plany dietetyczne</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{% url 'kalkulator' %}">Kalkulator kalorii</a>
+                </div>
+            </div>
+        </div>
+
         <h1>Twój Własny Plan Dietetyczny</h1>
+
+        <a href="{% url 'plan_list' %}" class="btn btn-secondary mt-4">Powrót do listy planów</a>
+        <a href="{% url 'download_custom_pdf' %}?{% for meal_id in selected_meals %}meals={{ meal_id }}{% if not forloop.last %}&{% endif %}{% endfor %}" class="btn btn-primary mt-4">Pobierz plan</a>
+
         <p>Oto szczegóły twojego planu:</p>
 
         <h2>Wybrane posiłki</h2>

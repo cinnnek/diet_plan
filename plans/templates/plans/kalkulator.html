@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Kalkulator Kalorii</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+    {% load static %}
 </head>
 <body>
+    <div class="header">
+        <div class="menu">
+            <a href="{% url 'home' %}">Strona główna</a> |
+            <a href="{% url 'plan_list' %}">Plany dietetyczne</a> |
+            <a href="{% url 'kalkulator' %}">Kalkulator kalorii</a>
+        </div>
+    </div>
+
     <h1>Kalkulator Kalorii</h1>
     <p>Śledź spożycie kalorii i makroskładników każdego dnia.</p>
+
+    <!-- Formularz kalkulatora -->
+    <form id="cpmForm">
+        <label for="weight">Masa ciała (kg):</label>
+        <input type="number" id="weight" name="weight" required>
+
+        <label for="height">Wzrost (cm):</label>
+        <input type="number" id="height" name="height" required>
+
+        <label for="age">Wiek:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">Płeć:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Wybierz...</option>
+            <option value="female">Kobieta</option>
+            <option value="male">Mężczyzna</option>
+        </select>
+
+        <label for="activity">Aktywność fizyczna:</label>
+        <select id="activity" name="activity" required>
+            <option value="">Wybierz...</option>
+            <option value="1.2">1.2 - brak aktywności fizycznej</option>
+            <option value="1.4">1.4 - mała aktywność</option>
+            <option value="1.6">1.6 - średni poziom aktywności</option>
+            <option value="1.75">1.75 - aktywny tryb życia</option>
+            <option value="2.0">2.0 - bardzo aktywny tryb życia</option>
+        </select>
+
+        <button type="button" onclick="calculateCPM()">Oblicz CPM</button>
+    </form>
+
+    <!-- Wyświetlanie wyniku -->
+    <p id="result">Twoje CPM wynosi: <span id="cpmValue"></span></p>
+    <p id="errorMessage" style="color: red; display: none;">Uzupełnij wszystkie dane!</p>
+
+    <script src="{% static 'js/calculator_js.js' %}"></script>
 </body>
 </html>

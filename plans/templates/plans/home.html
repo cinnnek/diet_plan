@@ -29,7 +29,7 @@
             <p class="hero-subtitle">
                 Sprawdź spersonalizowane plany dietetyczne, kontroluj swoje spożycie kalorii i realizuj swoje cele zdrowotne.
             </p>
-            <button class="hero-button">Sprawdź plany</button>
+            <input type="button" onclick="location.href='{% url 'plan_list' %}';" value="Sprawdź plany" />
         </div>
 
         <section class="features">
@@ -47,13 +47,13 @@
             <div class="service-item">
                 <h3 class="service-title">Plany dietetyczne</h3>
                 <p class="service-description">Wybierz dietę idealnie dopasowaną do Twojego stylu życia i celów</p>
-                <button class="service-button">Sprawdź plany</button>
+                <input type="button" onclick="location.href='{% url 'plan_list' %}';" value="Sprawdź plany" />
             </div>
 
             <div class="service-item">
                 <h3 class="service-title">Kalkulator kalorii</h3>
                 <p class="service-description">Śledź spożycie kalorii i makroskładników każdego dnia</p>
-                <button class="service-button">Oblicz kalorie</button>
+                <input type="button" onclick="location.href='{% url 'kalkulator' %}';" value="Oblicz kalorie" />
             </div>
 
             <div class="service-item">
@@ -77,8 +77,8 @@
         <footer class="footer">
             <h3 class="footer-title">Przejdź do</h3>
             <div class="footer-links">
-                <a href="#" class="footer-link">Plany dietetyczne</a>
-                <a href="#" class="footer-link">Kalkulator kalorii</a>
+                <a href="{% url 'plan_list' %}">Plany dietetyczne</a>
+                <a href="{% url 'kalkulator' %}">Kalkulator kalorii</a>
                 <a href="#" class="footer-link">Baza produktów</a>
             </div>
         </footer>
