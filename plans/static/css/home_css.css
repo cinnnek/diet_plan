@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/static/img/home_back.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.hero-section {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 450px;
+    padding-top: 150px;
+    /*background: url('/static/img/home_back.jpg') no-repeat center center/cover; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: -100px; /* Przesuń tytuł wyżej */
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.hero-section input[type="button"] {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero-section input[type="button"]:hover {
+    background-color: #ff6347;
+}
+
+.features-services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9ecef;
+    background-color: rgba(233, 236, 239, 0.8   );
+
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+.service-image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    border-style: solid;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.service-button {
+    background-color: #ff7043;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.service-button:hover {
+    background-color: #ff5722;
+}

@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 from django.shortcuts import render, get_object_or_404
 from .models import Plan, Posilek, SkladPosilku
+from .models import Product
 import json
 from django.http import HttpResponse, HttpResponseBadRequest
 from reportlab.lib.pagesizes import A4
@@ -82,6 +83,13 @@ def edit_plan(request, id_plan):
         'selected_meals_json': selected_meals_json,
         'meal_count': len(selected_meals),
     })
+
+def kalkulator(request):
+    products = Product.objects.all()
+    context = {
+        'products': products
+    }
+    return render(request, 'plans/kalkulator.html', context)
 
 def generate_pdf(request, id_plan=None):
 

@@ -5,13 +5,15 @@
     <title>Kalkulator Kalorii</title>
     <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/header_footer.css' %}">
 </head>
 <body>
-    <div class="header">
+    <div class="custom-header">
+        <div class="logo"><a href="{% url 'home' %}">DietaPlan</a></div>
         <div class="menu">
-            <a href="{% url 'home' %}">Strona główna</a> |
-            <a href="{% url 'plan_list' %}">Plany dietetyczne</a> |
-            <a href="{% url 'kalkulator' %}">Kalkulator kalorii</a>
+            <div class="menu-item"><a href="{% url 'home' %}">Strona główna</a></div>
+            <div class="menu-item"><a href="{% url 'plan_list' %}">Plany dietetyczne</a></div>
+            <div class="menu-item"><a href="{% url 'kalkulator' %}">Kalkulator kalorii</a></div>
         </div>
     </div>
 
@@ -39,11 +41,11 @@
         <label for="activity">Aktywność fizyczna:</label>
         <select id="activity" name="activity" required>
             <option value="">Wybierz...</option>
-            <option value="1.2">1.2 - brak aktywności fizycznej</option>
-            <option value="1.4">1.4 - mała aktywność</option>
-            <option value="1.6">1.6 - średni poziom aktywności</option>
-            <option value="1.75">1.75 - aktywny tryb życia</option>
-            <option value="2.0">2.0 - bardzo aktywny tryb życia</option>
+            <option value="1.2">1 - brak aktywności fizycznej</option>
+            <option value="1.4">2 - mała aktywność</option>
+            <option value="1.6">3 - średni poziom aktywności</option>
+            <option value="1.75">4 - aktywny tryb życia</option>
+            <option value="2.0">5 - bardzo aktywny tryb życia</option>
         </select>
 
         <button type="button" onclick="calculateCPM()">Oblicz CPM</button>
@@ -52,7 +54,45 @@
     <!-- Wyświetlanie wyniku -->
     <p id="result">Twoje CPM wynosi: <span id="cpmValue"></span></p>
     <p id="errorMessage" style="color: red; display: none;">Uzupełnij wszystkie dane!</p>
+    <!-- Drugi kalk-->
+    <h2>Ile spożyłeś kalorii?</h2>
+        <input type="text" id="search" placeholder="Szukaj" oninput="filterProducts()">
+        <div class="product-list" style="max-height: 200px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;">
+            <ul id="productList">
+                {% for product in products %}
+                <li data-id="{{ product.id_prod }}" data-calories="{{ product.calories_per_100g }}">
+                    {{ product.product_name }} - {{ product.calories_per_100g }} kcal na 100g
+                    <input type="number" id="grams-{{ product.id_prod }}" placeholder="Ile gram" style="width: 80px;">
+                    <button onclick="addProduct({{ product.id_prod }}, '{{ product.product_name }}', {{ product.calories_per_100g }})">Dodaj</button>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Lista zjedzonych produktów -->
+        <h3>Wybrane produkty</h3>
+        <div class="selected-products" style="border: 1px solid #ccc; padding: 10px;">
+            <ul id="selectedProductList"></ul>
+        </div>
+        <button onclick="clearAllProducts()">Wyczyść</button>
+
+        <!-- Wynik -->
+        <div class="result">
+            <p>Twój wynik:</p>
+            <button id="totalCalories">0 kcal</button>
+        </div>
+
+        <div class="custom-footer">
+            <h3 class="footer-title">Przejdź do</h3>
+            <div class="footer-links">
+                <a href="{% url 'plan_list' %}">Plany dietetyczne</a>
+                <a href="{% url 'kalkulator' %}">Kalkulator kalorii</a>
+                <a href="#">Baza produktów</a>
+            </div>
+        </div>
+
 
     <script src="{% static 'js/calculator_js.js' %}"></script>
+    <script src="{% static 'js/calculator_food.js' %}"></script>
 </body>
 </html>
