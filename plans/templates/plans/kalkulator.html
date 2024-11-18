@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/header_footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/kalkulator.css' %}">
 </head>
 <body>
     <div class="custom-header">
@@ -16,71 +17,81 @@
             <div class="menu-item"><a href="{% url 'kalkulator' %}">Kalkulator kalorii</a></div>
         </div>
     </div>
-
-    <h1>Kalkulator Kalorii</h1>
-    <p>Śledź spożycie kalorii i makroskładników każdego dnia.</p>
+    <div class="plan">
+        <h1>Kalkulator Kalorii</h1>
+        <p>Śledź spożycie kalorii i makroskładników każdego dnia.</p>
+    </div>
 
     <!-- Formularz kalkulatora -->
-    <form id="cpmForm">
-        <label for="weight">Masa ciała (kg):</label>
-        <input type="number" id="weight" name="weight" required>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Lewa kolumna -->
+            <div class="col-md-6">
+                <div class="calculator-box">
+                    <h2>Ile potrzebujesz kalorii, by utrzymać wagę?</h2>
+                    <form id="cpmForm">
+                        <label for="weight">Masa ciała (kg):</label>
+                        <input type="number" id="weight" name="weight" required>
 
-        <label for="height">Wzrost (cm):</label>
-        <input type="number" id="height" name="height" required>
+                        <label for="height">Wzrost (cm):</label>
+                        <input type="number" id="height" name="height" required>
 
-        <label for="age">Wiek:</label>
-        <input type="number" id="age" name="age" required>
+                        <label for="age">Wiek:</label>
+                        <input type="number" id="age" name="age" required>
 
-        <label for="gender">Płeć:</label>
-        <select id="gender" name="gender" required>
-            <option value="">Wybierz...</option>
-            <option value="female">Kobieta</option>
-            <option value="male">Mężczyzna</option>
-        </select>
+                        <label for="gender">Płeć:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Wybierz...</option>
+                            <option value="female">Kobieta</option>
+                            <option value="male">Mężczyzna</option>
+                        </select>
 
-        <label for="activity">Aktywność fizyczna:</label>
-        <select id="activity" name="activity" required>
-            <option value="">Wybierz...</option>
-            <option value="1.2">1 - brak aktywności fizycznej</option>
-            <option value="1.4">2 - mała aktywność</option>
-            <option value="1.6">3 - średni poziom aktywności</option>
-            <option value="1.75">4 - aktywny tryb życia</option>
-            <option value="2.0">5 - bardzo aktywny tryb życia</option>
-        </select>
+                        <label for="activity">Aktywność fizyczna:</label>
+                        <select id="activity" name="activity" required>
+                            <option value="">Wybierz...</option>
+                            <option value="1.2">1 - brak aktywności fizycznej</option>
+                            <option value="1.4">2 - mała aktywność</option>
+                            <option value="1.6">3 - średni poziom aktywności</option>
+                            <option value="1.75">4 - aktywny tryb życia</option>
+                            <option value="2.0">5 - bardzo aktywny tryb życia</option>
+                        </select>
 
-        <button type="button" onclick="calculateCPM()">Oblicz CPM</button>
-    </form>
+                        <button type="button" class="btn btn-warning mt-3" onclick="calculateCPM()">Oblicz</button>
+                    </form>
+                    <p id="result" class="mt-3">Twój wynik: <span id="cpmValue"></span></p>
+                    <p id="errorMessage" style="color: red; display: none;">Uzupełnij wszystkie dane!</p>
+                </div>
+            </div>
 
-    <!-- Wyświetlanie wyniku -->
-    <p id="result">Twoje CPM wynosi: <span id="cpmValue"></span></p>
-    <p id="errorMessage" style="color: red; display: none;">Uzupełnij wszystkie dane!</p>
-    <!-- Drugi kalk-->
-    <h2>Ile spożyłeś kalorii?</h2>
-        <input type="text" id="search" placeholder="Szukaj" oninput="filterProducts()">
-        <div class="product-list" style="max-height: 200px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;">
-            <ul id="productList">
-                {% for product in products %}
-                <li data-id="{{ product.id_prod }}" data-calories="{{ product.calories_per_100g }}">
-                    {{ product.product_name }} - {{ product.calories_per_100g }} kcal na 100g
-                    <input type="number" id="grams-{{ product.id_prod }}" placeholder="Ile gram" style="width: 80px;">
-                    <button onclick="addProduct({{ product.id_prod }}, '{{ product.product_name }}', {{ product.calories_per_100g }})">Dodaj</button>
-                </li>
-                {% endfor %}
-            </ul>
+            <!-- Prawa kolumna -->
+            <div class="col-md-6">
+                <div class="calculator-box">
+                    <h2>Ile spożyłeś kalorii?</h2>
+                    <input type="text" id="search" class="form-control" placeholder="Szukaj" oninput="filterProducts()">
+                    <div class="product-list mt-3" style="max-height: 200px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;">
+                        <ul id="productList">
+                            {% for product in products %}
+                            <li data-id="{{ product.id_prod }}" data-calories="{{ product.calories_per_100g }}">
+                                <span class="product-info">{{ product.product_name }} - {{ product.calories_per_100g }} kcal na 100g</span>
+                                <input type="number" id="grams-{{ product.id_prod }}" placeholder="Ile gram" class="product-input">
+                                <button class="btn btn-sm btn-success add-button" onclick="addProduct({{ product.id_prod }}, '{{ product.product_name }}', {{ product.calories_per_100g }})">Dodaj</button>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <h3 class="mt-3">Wybrane produkty</h3>
+                    <div class="selected-products" style="border: 1px solid #ccc; padding: 10px;">
+                        <ul id="selectedProductList"></ul>
+                    </div>
+                    <button class="btn btn-danger mt-3" onclick="clearAllProducts()">Wyczyść</button>
+                    <div class="result mt-3">
+                        <p>Twój wynik:</p>
+                        <button id="totalCalories" class="btn btn-primary">0 kcal</button>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Lista zjedzonych produktów -->
-        <h3>Wybrane produkty</h3>
-        <div class="selected-products" style="border: 1px solid #ccc; padding: 10px;">
-            <ul id="selectedProductList"></ul>
-        </div>
-        <button onclick="clearAllProducts()">Wyczyść</button>
-
-        <!-- Wynik -->
-        <div class="result">
-            <p>Twój wynik:</p>
-            <button id="totalCalories">0 kcal</button>
-        </div>
+    </div>
 
         <div class="custom-footer">
             <h3 class="footer-title">Przejdź do</h3>

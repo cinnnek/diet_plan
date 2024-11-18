@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/static/img/home_back.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.plan{
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.calculator-box {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Jasne tło dla czytelności */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.product-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.selected-products ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-info {
+    display: inline-block;
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-input {
+    width: 20%;
+    height: 40px;
+    margin-right: 10px;
+
+}
+
+.add-button {
+    width: 20%;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+}

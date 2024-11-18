@@ -1,18 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/static/img/home_back.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
 .plans-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px;
+    padding-left: 70px;
+    padding-bottom: 30px;
+}
+.plan{
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    text-align: center;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-    opacity: 0.9;
-    height: 100%;
+    flex: 1 1 calc(33.333% - 20px);
     max-width: 350px;
+    box-sizing: border-box;
 }
 
 .card-body {
@@ -24,10 +34,17 @@
 
 .card-img-top {
     object-fit: cover;
-    height: 150px; /* Wysokość obrazka */
     width: 100%;
+    display: block;
+
 }
 
 .card-text {
     flex-grow: 1; /* Dostosowanie, aby tekst rozciągał się w karcie */
 }
+
+
+
+
+
+
