@@ -40,7 +40,7 @@ body {
 }
 
 .card-text {
-    flex-grow: 1; /* Dostosowanie, aby tekst rozciągał się w karcie */
+    flex-grow: 1;
 }
 
 

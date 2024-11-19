@@ -3,54 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/header_footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plan_detail.css' %}">
     <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
     <title>Plan Dietetyczny: {{ plan.nazwa }}</title>
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">
-            <div class="logo"></div>
-            <div class="menu">
-                <div class="menu-item">
-                    <a href="{% url 'home' %}">Strona główna</a>
-                </div>
-                <div class="menu-item">
-                    <a href="{% url 'plan_list' %}">Plany dietetyczne</a>
-                </div>
-                <div class="menu-item">
-                    <a href="{% url 'kalkulator' %}">Kalkulator kalorii</a>
-                </div>
-            </div>
+    <div class="custom-header">
+        <div class="logo"><a href="{% url 'home' %}">DietaPlan</a></div>
+        <div class="menu">
+            <div class="menu-item"><a href="{% url 'home' %}">Strona główna</a></div>
+            <div class="menu-item"><a href="{% url 'plan_list' %}">Plany dietetyczne</a></div>
+            <div class="menu-item"><a href="{% url 'kalkulator' %}">Kalkulator kalorii</a></div>
+            <!-- <div class="menu-item">Konto</div> ????-->
         </div>
+    </div>
+    <div class="plan">
         <h1>{{ plan.nazwa }}</h1>
         <p>{{ plan.description }}</p>
-        <a href="{% url 'plan_list' %}" class="btn btn-secondary mt-4">Powrót do listy planów</a>
-        <a href="{% url 'download_pdf' plan.id_plan %}" class="btn btn-primary mt-4">Pobierz plan</a>
-        <a href="{% url 'edit_plan' id_plan=plan.id_plan %}" class="btn btn-primary mt-4">Edytuj Plan</a>
+    </div>
 
-        <h2>Posiłki</h2>
-        {% for meal in meals %}
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">{{ meal.nazwa }} - {{ meal.kcal }} kcal</h5>
-                    <p class="card-text"><strong>Przepis:</strong> {{ meal.przepis }}</p>
-                    <h6>Składniki:</h6>
-                    <ul class="list-group list-group-flush">
-                        {% for skladnik in meal.skladniki.all %}
-                            <li class="list-group-item">
-                                {{ skladnik.nazwa_produktu }} - {{ skladnik.ilosc }} {{ skladnik.jednostka }}
-                            </li>
-                        {% empty %}
-                            <li class="list-group-item">Brak składników</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        {% endfor %}
+    <div class="butt_plans">
         <a href="{% url 'download_pdf' plan.id_plan %}" class="btn btn-primary mt-4">Pobierz plan</a>
         <a href="{% url 'edit_plan' id_plan=plan.id_plan %}" class="btn btn-primary mt-4">Edytuj Plan</a>
         <a href="{% url 'plan_list' %}" class="btn btn-secondary mt-4">Powrót do listy planów</a>
+    </div>
+
+    <div class="meals-container">
+        <h2>Posiłki</h2>
+    {% for meal in meals %}
+        <div class="meal-card">
+            <div class="card-body">
+                <h5 class="card-title">{{ meal.nazwa }} - {{ meal.kcal }} kcal</h5>
+                <p class="card-text"><strong>Przepis:</strong> {{ meal.przepis }}</p>
+                <h6>Składniki:</h6>
+                <ul class="list-group list-group-flush">
+                    {% for skladnik in meal.skladniki.all %}
+                        <li class="list-group-item">
+                            {{ skladnik.nazwa_produktu }} - {{ skladnik.ilosc }} {{ skladnik.jednostka }}
+                        </li>
+                    {% empty %}
+                        <li class="list-group-item">Brak składników</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    <div class="butt_plans">
+        <a href="{% url 'download_pdf' plan.id_plan %}" class="btn btn-primary mt-4">Pobierz plan</a>
+        <a href="{% url 'edit_plan' id_plan=plan.id_plan %}" class="btn btn-primary mt-4">Edytuj Plan</a>
+        <a href="{% url 'plan_list' %}" class="btn btn-secondary mt-4">Powrót do listy planów</a>
+    </div>
+    <br>
+    <div class="custom-footer">
+        <h3 class="footer-title">Przejdź do</h3>
+        <div class="footer-links">
+            <a href="{% url 'plan_list' %}">Plany dietetyczne</a>
+            <a href="{% url 'kalkulator' %}">Kalkulator kalorii</a>
+            <a href="#">Baza produktów</a>
+        </div>
     </div>
 </body>
 </html>

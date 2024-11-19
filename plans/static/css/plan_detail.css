@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/static/img/home_back.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.plan{
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.butt_plans{
+    text-align: center;
+}
+
+.meals-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.meal-card {
+    width: 70%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.meal-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 1);
+}
+

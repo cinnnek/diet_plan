@@ -20,13 +20,13 @@
         </div>
     </div>
 
-    <!-- Nagłówek dla listy planów dietetycznych -->
+
     <div class="plan">
         <h1>Plany Dietetyczne</h1>
 
         <a href="{% url 'create_plan' %}" class="btn btn-success mb-4">Stwórz własny plan</a>
     </div>
-    <!-- Kontener na karty planów -->
+
     <div class="plans-container">
         {% for item in plans_with_meals %}
             <div class="card">
@@ -47,7 +47,7 @@
         {% endfor %}
     </div>
 
-    <!-- Stopka strony -->
+
     <div class="custom-footer">
         <h3 class="footer-title">Przejdź do</h3>
         <div class="footer-links">
