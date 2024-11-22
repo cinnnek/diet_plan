@@ -7,8 +7,9 @@ body {
 .custom-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    align-items: center; /* Wyrównanie elementów do środka w osi pionowej */
+    padding: 0 20px; /* Usuwamy górny i dolny padding */
+    height: 60px; /* Ustalona wysokość nagłówka */
     background-color: #333;
     color: white;
     width: 100vw;
@@ -21,25 +22,46 @@ body {
 .custom-header .logo {
     font-size: 24px;
     font-weight: bold;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 .menu {
     display: flex;
-    justify-content: center; /* Wyrównanie do środka */
-    gap: 40px; /* Odstępy między linkami */
-    flex-grow: 1; /* Sprawia, że menu zajmuje przestrzeń między logo a krawędzią */
+    justify-content: center;
+    gap: 100px;
+    flex-grow: 1;
+    height: 100%;
 }
 
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
 .menu-item a {
-    padding: 50px;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 0 15px;
+    height: 100%;
+    width: 180px;
+    line-height: 60px;
+    text-align: center;
     color: white;
     text-decoration: none;
     font-size: 16px;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    transition: all 0.3s ease;
+    background-color: #444;
 }
 
 .menu-item a:hover {
-    text-decoration: underline;
+    background-color: #D3D3D3;
+    transform: translateY(-3px);
+    color: black;
 }
+
 
 .custom-footer {
     padding: 10px 20px;
