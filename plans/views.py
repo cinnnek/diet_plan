@@ -8,13 +8,14 @@ from django.http import HttpResponse, HttpResponseBadRequest
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 from reportlab.lib import colors
-
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 import io
 import os
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
+from django.http import JsonResponse
+from django.template.loader import render_to_string
 
 def home(request):
     return render(request, 'plans/home.html')
@@ -83,6 +84,16 @@ def edit_plan(request, id_plan):
         'selected_meals_json': selected_meals_json,
         'meal_count': len(selected_meals),
     })
+
+def products_view(request):
+    search_query = request.GET.get('search', '')
+    if search_query:
+        products = Product.objects.filter(product_name__icontains=search_query)
+    else:
+        products = Product.objects.all()
+    return render(request, 'plans/products.html', {'products': products, 'search_query': search_query})
+
+
 
 def kalkulator(request):
     products = Product.objects.all()

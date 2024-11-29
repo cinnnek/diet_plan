@@ -56,7 +56,7 @@
                     <div class="service-image" style="background-image: url('/static/img/products.png');"></div>
                     <h3 class="service-title">Baza produktów</h3>
                     <p class="service-description">Wybieraj z setek produktów spożywczych i sprawdź ile mają kalorii</p>
-                    <button class="service-button">Sprawdź produkty</button>
+                    <button class="service-button" onclick="location.href='{% url 'products' %}'">Sprawdź produkty</button>
                 </div>
             </div>
         </section>
@@ -68,7 +68,7 @@
             <div class="footer-links">
                 <a href="{% url 'plan_list' %}">Plany dietetyczne</a>
                 <a href="{% url 'kalkulator' %}">Kalkulator kalorii</a>
-                <a href="#">Baza produktów</a>
+                <a href="{% url 'products' %}">Baza produktów</a>
             </div>
         </div>
     </div>

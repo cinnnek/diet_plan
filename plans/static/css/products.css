@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/static/img/home_back.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.plan{
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.container mt-4 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}

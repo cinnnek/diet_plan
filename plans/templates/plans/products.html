@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/header_footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/products.css' %}">
+    <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+    <title>Plany Dietetyczne</title>
+</head>
+<body>
+    <div class="custom-header">
+        <div class="logo"><a href="{% url 'home' %}">DietaPlan</a></div>
+        <div class="menu">
+            <div class="menu-item"><a href="{% url 'home' %}">Strona główna</a></div>
+            <div class="menu-item"><a href="{% url 'plan_list' %}">Plany dietetyczne</a></div>
+            <div class="menu-item"><a href="{% url 'kalkulator' %}">Kalkulator kalorii</a></div>
+        </div>
+    </div>
+
+
+    <div class="plan">
+        <br>
+        <h1>Lista produktów i ich wartości odżywcze na 100g</h1>
+        <br>
+    </div>
+    <main class="main-content">
+        <div class="container mt-4">
+            <!-- Pole wyszukiwania -->
+            <div class="mb-3">
+                <div class="input-group">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="form-control"
+                        placeholder="Wyszukaj produkt...">
+                </div>
+            </div>
+
+            <!-- Tabela produktów -->
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Nazwa</th>
+                        <th>Ilość kalorii</th>
+                        <th>Ilość białka</th>
+                        <th>Ilość tłuszczu</th>
+                        <th>Ilość węglowodanów</th>
+                    </tr>
+                </thead>
+                <tbody id="productTable">
+                    {% for product in products %}
+                    <tr>
+                        <td>{{ product.product_name }}</td>
+                        <td>{{ product.calories_per_100g }}</td>
+                        <td>{{ product.proteins_per_100g }}</td>
+                        <td>{{ product.fats_per_100g }}</td>
+                        <td>{{ product.carbs_per_100g }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div class="custom-footer">
+        <h3 class="footer-title">Przejdź do</h3>
+        <div class="footer-links">
+            <a href="{% url 'plan_list' %}">Plany dietetyczne</a>
+            <a href="{% url 'kalkulator' %}">Kalkulator kalorii</a>
+            <a href="{% url 'products' %}">Baza produktów</a>
+        </div>
+    </div>
+    <script src="{% static 'js/products_js.js' %}"></script>
+</body>
+</html>

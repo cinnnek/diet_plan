@@ -29,4 +29,6 @@ urlpatterns = [
     path('edit_plan/<int:id_plan>/', views.edit_plan, name='edit_plan'),
     path('plan_detail/<int:id_plan>/download_pdf/', views.generate_pdf, name='download_pdf'),
     path('custom_plan_detail/download_pdf/', views.generate_pdf, name='download_custom_pdf'),
+    path('products/', views.products_view, name='products'),
+
 ]
