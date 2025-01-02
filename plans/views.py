@@ -22,7 +22,6 @@ def home(request):
 
 def plan_list(request):
     plans = Plan.objects.all()
-    # Tworzymy słownik, w którym kluczem jest plan, a wartością lista posiłków
     plans_with_meals = [
         {
             'plan': plan,

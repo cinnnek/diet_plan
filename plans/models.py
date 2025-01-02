@@ -24,7 +24,6 @@ class Plan(models.Model):
     def __str__(self):
         return self.nazwa
     def get_image_url(self):
-        # Generowanie URL obrazu na podstawie ID planu
         return f"/static/img/plan_{self.id_plan}.png"
 
 class DietUser(models.Model):
