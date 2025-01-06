@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'mydietplatform.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3', #typ bazy danych
         'NAME': BASE_DIR / 'db.sqlite3',
     },
     'mysql_db': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.mysql', # typ bazy danych
         'NAME': 'diets_project',  # nazwa bazy danych MySQL
         'USER': 'root',            # nazwa użytkownika MySQL
         'PASSWORD': '',            # hasło użytkownika MySQL
